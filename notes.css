@@ -1,0 +1,157 @@
+/* GENERAL CSS  */
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border-radius: 10px;
+	transition: all 400ms;
+}
+
+.hidden{
+	visibility: hidden;
+}
+
+button{
+	padding: 5px;
+	font-weight: bold;
+	box-shadow: 1px 1px 10px black,-1px -1px 10px black;
+}
+
+button:hover{
+	box-shadow: none;
+	cursor: pointer;
+}
+
+button:active{
+	transform: scale(0.9);
+}
+
+/* MAIN CSS */
+
+#Main{
+	padding: 10px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	gap: 10px;
+}
+
+.note{
+	box-shadow: 1px 1px 10px gray,-1px -1px 10px gray;
+	padding: 10px;
+	text-align: center;
+	min-width: 200px;
+}
+
+.note h1{
+	background-color: orange;
+	margin-bottom: 20px;
+	font-size: medium;
+}
+.note p{
+	margin-bottom: 20px;
+	font-size: small;
+}
+
+.note button{
+	background-color: red;
+	color: white;
+	font-size: larger;
+}
+.clickHere
+{
+	visibility: hidden;
+}
+.note:hover button{
+	visibility: visible;
+}
+
+#add{
+	width: 100%;
+	text-align: center;
+}
+
+.addBtn{
+	background-color: green;
+	color: white;
+	font-size: larger;
+}
+
+#addNoteForm{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	display: flex;
+	flex-flow: column;
+	gap: 10px;
+	width: 80%;
+	border: 2px solid green;
+	padding: 5px;
+	background-color: skyblue;
+}
+
+.addNote input{
+	padding: 5px;
+}
+
+.error{
+	color: red;
+	text-align: center;
+}
+
+@media (width<400px)
+{
+	.note{
+		min-width:200px ;
+	}
+	.note h1{
+		font-size: medium;
+	}
+
+	.note p{
+		font-size: small;
+	}
+
+	.note button{
+		background-color: red;
+		color: white;
+		font-size: small;
+	}
+
+	.addBtn{
+		background-color: green;
+		color: white;
+		font-size:small;
+	}
+
+	.clickHere
+	{
+		visibility: visible;
+	}
+	
+}
+
+@media (width>1000px)
+{
+	.note{
+		width: 300px;
+	}
+
+	.note h1{
+		font-size: x-large;
+	}
+
+	.note p{
+		font-size: larger;
+	}
+
+	.note button{
+		background-color: red;
+		color: white;
+		font-size: large;
+	}
+}
+
+

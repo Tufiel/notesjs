@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Notes</title>
+	<link rel="stylesheet" href="notes.css">
+</head>
+<body>
+
+	<div id="addNoteForm" class="hidden">
+		<b class="error hidden">Please enter all fields!</b>
+		<input type="text" id="title" placeholder="Title">
+		<textarea placeholder="Note" id="noteText" cols="30" rows="10"></textarea>
+		<button class="addBtn" id="cancelBtn">cancel</button>
+		<button class="addBtn" id="saveBtn">Save</button>
+	</div>
+
+	<b class="clickHere">Click on any note to delete it</b>
+	<div id="Main">
+		
+	</div>
+	<div id="add">
+		<button class="addBtn" id="addBtn">Add</button>
+	</div>
+	<script src="notes.js"></script>
+</body>
+</html>
